@@ -24,3 +24,7 @@ Practical steps:
 3.  Subtract mean at data points from data values to get residuals.
 4.  Determine parameters of the covariance function that describes the residual field via maximum likelihood estimation (optimize hyperparameters via [george package](https://george.readthedocs.io/en/latest/)).
 5.  Use Gaussian process regression with optimized covariance parameters to compute an estimate at a given set of points (lat, lon, time) (via [george package](https://george.readthedocs.io/en/latest/)). Add this to the estimate of the large-scale mean to get final estimate. 
+
+Additional resources:
+- George example for 2D interpolation (https://gist.github.com/shoyer/80aa06f5ad44aacd9187).
+- 
