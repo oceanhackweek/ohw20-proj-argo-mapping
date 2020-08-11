@@ -18,9 +18,9 @@ Could be focused on any fairly small region (~5-10-degree box) in the part of th
 
 Practical steps:
 1. Import Argo data from selected region of interest (lat/long/depth).
--- We could skip this initially and just make a script that takes an input dataset consisting of (lat, lon, time, data), which would be more easily applicable to any given dataset. 
+-- We could skip this initially and just make a script that takes an input dataset consisting of (lat, lon, time, data), which would be more easily applicable to any given dataset. [Use Argopy](https://argopy.readthedocs.io/en/latest/data_fetching.html)
 2.  Compute mean (large-scale signal). 
--- This can be done simply using a least squares fit to data, with a given set of basis functions such as 2D polynomial in space and a seasonal cycle in time.
+-- This can be done simply using a least squares fit to data, with a given set of basis functions such as 2D polynomial in space and a seasonal cycle in time. [Can potentially use Scipy to do this](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html).
 3.  Subtract mean at data points from data values to get residuals.
-4.  Determine parameters of the covariance function that describes the residual field via maximum likelihood estimation (optimize hyperparameters via george package).
+4.  Determine parameters of the covariance function that describes the residual field via maximum likelihood estimation (optimize hyperparameters via [george package](https://george.readthedocs.io/en/latest/)).
 5.  Use Gaussian process regression with optimized covariance parameters to compute an estimate at a given set of points (lat, lon, time) (via [george package](https://george.readthedocs.io/en/latest/)). Add this to the estimate of the large-scale mean to get final estimate. 
