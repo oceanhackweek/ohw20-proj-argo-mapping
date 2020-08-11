@@ -29,4 +29,5 @@ Additional resources:
 - Tutorials from George: https://george.readthedocs.io/en/latest/tutorials/first/ ; https://george.readthedocs.io/en/latest/tutorials/hyper/
 - George example for 2D interpolation :https://gist.github.com/shoyer/80aa06f5ad44aacd9187 
 - List of useful links to learn more :https://hackmd.io/@eHN2gDGTS7uR1j3KZ26AJQ/ry8VfkAVL
+- Argo: https://argo.ucsd.edu/
 
