@@ -26,5 +26,6 @@ Practical steps:
 5.  Use Gaussian process regression with optimized covariance parameters to compute an estimate at a given set of points (lat, lon, time) (via [george package](https://george.readthedocs.io/en/latest/)). Add this to the estimate of the large-scale mean to get final estimate. 
 
 Additional resources:
-- George example for 2D interpolation (https://gist.github.com/shoyer/80aa06f5ad44aacd9187).
-- 
+- George example for 2D interpolation :https://gist.github.com/shoyer/80aa06f5ad44aacd9187 
+- List of useful links to learn more :https://hackmd.io/@eHN2gDGTS7uR1j3KZ26AJQ/ry8VfkAVL
+
