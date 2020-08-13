@@ -11,3 +11,4 @@ dependencies:
   - george
   - jupyterlab
   - argopy
+  - scipy
