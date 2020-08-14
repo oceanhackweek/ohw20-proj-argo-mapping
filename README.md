@@ -1,4 +1,7 @@
 # Ocean Hackweek 2020: Project to map Argo data
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DangoMelon/ohw20-proj-argo-mapping/enable_binder?urlpath=lab)
+
 GP regression to interpolate/map Argo profile data. Follow the algorithm from [Kuusela and Stein 2018](https://royalsocietypublishing.org/doi/10.1098/rspa.2018.0400).
 
 Project 5: Local spatio-temporal interpolation of Argo data
