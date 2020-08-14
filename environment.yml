@@ -12,3 +12,6 @@ dependencies:
   - jupyterlab
   - argopy
   - scipy
+  - requests
+  - aiohttp
+  - cmocean
