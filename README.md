@@ -25,7 +25,7 @@ Practical steps:
 2.  Compute mean (large-scale signal). 
 -- This can be done simply using a least squares fit to data, with a given set of basis functions such as 2D polynomial in space and a seasonal cycle in time. [Can potentially use Scipy to do this](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html). - see note 1 below.
 3.  Subtract mean at data points from data values to get residuals.
-4.  Determine parameters of the covariance function that describes the residual field via maximum likelihood estimation (optimize hyperparameters via [george package](https://george.readthedocs.io/en/latest/)).
+4.  Determine parameters of the covariance function that describes the residual field via maximum likelihood estimation (optimize hyperparameters via [george package](https://george.readthedocs.io/en/latest/)). !! Now also using GPyTorch !! 
 5.  Use Gaussian process regression with optimized covariance parameters to compute an estimate at a given set of points (lat, lon, time) (via [george package](https://george.readthedocs.io/en/latest/)). Add this to the estimate of the large-scale mean to get final estimate. 
 
 Additional resources:
